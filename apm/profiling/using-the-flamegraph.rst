@@ -41,6 +41,19 @@ Each bar in the flame graph is a stack frame, tied to a function in your code. A
 
 The width of each bar is an important clue to the performance of your code. The wider a bar or stack frame is, the more often the related function appears in stack traces, which might mean that the frame consumes more resources relative to the other stack frames.
 
+Additionally, bars have random colors to help visually differentiate functions and make the graph more readable. The colors do not have any meaning related to performance data, rather they help distinguish between different functions also making it easier to see the relationships of those functions in the call stack hierarchy. 
+
+Within each bar you can find the class name, file name, and line of code for the method called by your application. 
+
+.. image:: /_images/apm/profiling/profiling-bar-detail.png
+
+You can group stack frames and turn them into the root frame by selecting the tile button that appears after expanding a stack frame. Select the button again to restore the view. You can also select the :guilabel:`Total` frame at any time to go back. The following animation shows how to group and ungroup stack frames:
+
+.. image:: /_images/apm/profiling/group-frames.gif
+   :alt: Grouping and ungrouping stack frames.
+
+CPU and memory
+-------------------------------------------------
 .. list-table::
    :header-rows: 1
    :widths: 10, 80
@@ -52,14 +65,6 @@ The width of each bar is an important clue to the performance of your code. The 
      - How often a function appears in stack traces. CPU usage relative to other stack traces.
    * - Memory
      - How much memory is allocated by a function relative to other stack traces
-
-You can group stack frames and turn them into the root frame by selecting the tile button that appears after expanding a stack frame. Select the button again to restore the view. You can also select the :guilabel:`Total` frame at any time to go back. The following animation shows how to group and ungroup stack frames:
-
-.. image:: /_images/apm/profiling/group-frames.gif
-   :alt: Grouping and ungrouping stack frames.
-
-CPU and memory
--------------------------------------------------
 
 You can switch the view of the AlwaysOn Profiling flame graph between :guilabel:`CPU` and :guilabel:`Memory` at any time. Memory data only appears if you've activated memory profiling. See :ref:`profiling-setup-enable-profiler`.
 
