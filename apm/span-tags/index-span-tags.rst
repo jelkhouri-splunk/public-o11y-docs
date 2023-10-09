@@ -88,7 +88,7 @@ Follow these steps to index a span tag or process to create a Troubleshooting Me
    
 7. After the cardinality check has run, review the cardinality and enable your new MetricSet.
 
-   * If the cardinality impact of indexing this new MetricSet is acceptable, select the check mark under :guilabel:`Actions` to enable your Troubleshooting MetricSet. 
+   * If the cardinality impact of indexing this new MetricSet is acceptable, select the check mark under :guilabel:`Actions` to enable your Troubleshooting MetricSet. :guilabel:`Note` It may take several minutes before your newly added indexed tag/MetricSet will appear in Tag Spotlight.
    * If the check times out before you enable the MetricSet, rerun the analysis.
    * If the check shows as failed, your cardinality is too high to create the new MetricSet. You can edit the MetricSet to adjust the configuration to reduce cardinality or you can select the x to delete the pending Metricset.
 
