@@ -30,7 +30,7 @@ There are two types of data links for a property, local and global. See the foll
      - :strong:`Description`
   
    * - Local
-     - | - Available on only on dashboard.
+     - | - Available on only one dashboard.
        | - Anyone with write permission for a dashboard can add data links that appear on that dashboard.
        | - Example: While viewing a dashboard, you can create a link from any value of ``InstanceId`` to the built-in dashboard "EC2 Instance". Following the link opens the EC2 Instance dashboard filtered to the value of ``InstanceId`` you select. This link is available for any appearance of ``InstanceId`` in that dashboard; it doesn't appear as a link on any other dashboard or in alert messages.
    
