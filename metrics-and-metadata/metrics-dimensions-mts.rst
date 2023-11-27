@@ -23,7 +23,7 @@ Splunk Observability Cloud data comes enriched with additional metadata:
     - Infrastructure metric
     - Key-value pair
   * - Custom properties 
-    - Applied to metric dimensions after ingest to add context to the metrics. Custom properties do not contribute to uniquely identify an MTS.
+    - Applied to metric dimensions after ingest to add context to the metrics. Custom properties do not contribute to uniquely identify an MTS. If updating a property on a dimension, you lose all the historical values for that property.
     - Infrastructure metric
     - Key-value pair
   * - Tags
